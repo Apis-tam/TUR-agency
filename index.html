@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Starter" />
+    <meta name="author" content="Admin" />
+    <title>Starter</title>
+
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/slick.min.css" />
+    <link rel="stylesheet" href="css/slick-theme.min.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="head">
+      <header>
+        <div class="container">
+          <div class="row head__row">
+            <div class="col-1 head__logo ">
+              <a href="#" class="navbar-brand">
+                <img src="images/logo.png" alt="logotip" />
+              </a>
+            </div>
+            <div class="offset-3 col-8">
+              <div class="head__contact">
+                <div class="icon icon__local"></div>
+                <p class="head__adress">
+                  г. Харьков, ул. Мироносицкая 10а
+                </p>
+                <p class="head__phone"></p>
+                <div class="icon icon__phone"></div>
+                <p class="head__phone">
+                  +38 (099) 990-81-00 (viber, telegram)
+                </p>
+                <div class="head__social">
+                  <div class="icon icon__fb"></div>
+                  <div class="icon icon__insta"></div>
+                </div>
+              </div>
+              <nav class="navbar navbar-expand-lg">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></span>
+                </button>
+
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"
+                        >Главная <span class="sr-only">(current)</span></a
+                      >
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Туры
+                      </a>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <a class="dropdown-item" href="#">Горящие туры</a>
+                        <a class="dropdown-item" href="#">Поиск тура</a>
+                        <a class="dropdown-item" href="#">Туры по украине</a>
+                        <a class="dropdown-item" href="#">Экскурсионные туры</a>
+                        <a class="dropdown-item" href="#">Week end туры</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Страны</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Услуги
+                      </a>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <a class="dropdown-item" href="#">Авиабилеты</a>
+                        <a class="dropdown-item" href="#">Визовая поддержка</a>
+                        <a class="dropdown-item" href="#"
+                          >Индивидуальный трансфер</a
+                        >
+                        <a class="dropdown-item" href="#"
+                          >Подарочный сертификат</a
+                        >
+                        <a class="dropdown-item" href="#"
+                          >Бронирование отелей и аппартаментов</a
+                        >
+                        <a class="dropdown-item" href="#"
+                          >Как забронировать и оплатить тур</a
+                        >
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="wrap">
+              <div class="col-12 title-box">
+                <h1 class="title-box__title">
+                  Лучшие предложения по Солнечному Египту из Харькова
+                </h1>
+                <a class="title-box__button" href="#">Лучшие предложения</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="head-slider">
+        <div class="head-slider__item">
+          <img src="images/head-slide1.jpg" alt="head-slider" />
+        </div>
+        <div class="head-slider__item">
+          <img src="images/head-slide2.jpg" alt="head-slider" />
+        </div>
+        <div class="head-slider__item">
+          <img src="images/head-slide3.jpg" alt="head-slider" />
+        </div>
+        <div class="head-slider__item">
+          <img src="images/head-slide4.jpg" alt="head-slider" />
+        </div>
+        <div class="head-slider__item">
+          <img src="images/head-slide5.jpg" alt="head-slider" />
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <a href="#" class="slider__link">Горящие туры</a>
+            <a href="#" class="slider__link">Популярные туры</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider-slider">
+        <div class="slider-slider__item">
+          <div class="slider-slider__picture">
+            <img src="images/slider-slider2.jpg" alt="slider-image" />
+          </div>
+          <div class="slider-slider__info">
+            <p class="slider-slider__title">8 марта Cyrene Sharm hotel</p>
+            <p class="slider-slider__date">(12.03.2018-19.03.2018)</p>
+            <p class="slider-slider__desc">
+              Перелет питание по системе All inclusive трансфер
+            </p>
+            <p class="slider-slider__price">1 259 грн</p>
+            <sup>/за 1 человека</sup>
+            <a href="#" class="slider-slider__button">&gt;</a>
+          </div>
+        </div>
+
+        <div class="slider-slider__item">
+          <div class="slider-slider__picture">
+            <img src="images/slider-slider1.jpg" alt="slider-img" />
+          </div>
+          <div class="slider-slider__info">
+            <p class="slider-slider__title">8 марта Cyrene Sharm hotel</p>
+            <p class="slider-slider__date">(12.03.2018-19.03.2018)</p>
+            <p class="slider-slider__desc">
+              Перелет питание по системе All inclusive трансфер
+            </p>
+            <p class="slider-slider__price">1 259 грн</p>
+            <sup>/за 1 человека</sup>
+            <a href="#" class="slider-slider__button">&gt;</a>
+          </div>
+        </div>
+        <div class="slider-slider__item">
+          <div class="slider-slider__picture">
+            <img src="images/slider-slider1.jpg" alt="slider-img" />
+          </div>
+          <div class="slider-slider__info">
+            <p class="slider-slider__title">8 марта Cyrene Sharm hotel</p>
+            <p class="slider-slider__date">(12.03.2018-19.03.2018)</p>
+            <p class="slider-slider__desc">
+              Перелет питание по системе All inclusive трансфер
+            </p>
+            <p class="slider-slider__price">1 259 грн</p>
+            <sup>/за 1 человека</sup>
+            <a href="#" class="slider-slider__button">&gt;</a>
+          </div>
+        </div>
+        <div class="slider-slider__item">
+          <div class="slider-slider__picture">
+            <img src="images/slider-slider1.jpg" alt="slider-img" />
+          </div>
+          <div class="slider-slider__info">
+            <p class="slider-slider__title">8 марта Cyrene Sharm hotel</p>
+            <p class="slider-slider__date">(12.03.2018-19.03.2018)</p>
+            <p class="slider-slider__desc">
+              Перелет питание по системе All inclusive трансфер
+            </p>
+            <p class="slider-slider__price">1 259 грн</p>
+            <sup>/за 1 человека</sup>
+            <a href="#" class="slider-slider__button">&gt;</a>
+          </div>
+        </div>
+        <div class="slider-slider__item">
+          <div class="slider-slider__picture">
+            <img src="images/slider-slider2.jpg" alt="slider-image" />
+          </div>
+          <div class="slider-slider__info">
+            <p class="slider-slider__title">8 марта Cyrene Sharm hotel</p>
+            <p class="slider-slider__date">(12.03.2018-19.03.2018)</p>
+            <p class="slider-slider__desc">
+              Перелет питание по системе All inclusive трансфер
+            </p>
+            <p class="slider-slider__price">1 259 грн</p>
+            <sup>/за 1 человека</sup>
+            <a href="#" class="slider-slider__button">&gt;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <div class="container">
+        <h1 class="service__title">наши преимущества</h1>
+        <div class="row service__row">
+          <div class="col-12 col-md-5">
+            <img
+              class="service__picture"
+              src="images/service-picture.jpg"
+              alt="service picture"
+            />
+          </div>
+          <div class="col-12 offset-1 col-md-6">
+            <p class="service__desc">
+              Очень долго подбирали разные варианты для того, чтобы
+              отпраздновать свой юбилейный День рождения в путешествии и не
+              могли определиться... Решили обратиться за помощью в турагенство.
+              Гульнара, выслушав все пожелания, предложила отдых в Турции, отель
+              Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень
+              благодарны ей за предложенный вариант!!!! Отдых получился
+              отличный! Отель с большой ухоженной территорией, внимательный
+              обслуживающий персонал. Отличный номер с видом на море.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="container">
+        <h1 class="order__title">хочу предложение по туру</h1>
+        <div class="order__form">
+          <form action="#">
+            <input class="form__name" type="text" placeholder="Имя" />
+            <input class="form__mail" type="email" placeholder="Email" />
+            <input class="form__tel" type="tel" placeholder="Телефон" />
+            <select name="country" id="country" class="form__select">
+              <option class="selected" selected disabled>Старна тура</option>
+              <option value="egypt">Египет</option>
+              <option value="Srilanka">Шри Ланка</option>
+              <option value="Dominikana">Доминикана</option>
+            </select>
+
+            <button class="form__button" type="submit">
+              получить предложение
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="footer__logo">
+              <img src="images/kuraj-tur.png" alt="logo" />
+            </div>
+            <div class="footer__desc">
+              <p class="footer__desc--text">
+                Кураж тур агенство,которое предоставляет услуги по поиску,
+                оформлению и подбору туров для вас и ваших родных.
+              </p>
+            </div>
+            <div class="footer__webakula">
+              <p class="footer__webakula--text">Создание сайта —</p>
+              <a href="#" alt="link"
+                ><img
+                  class="footer__webakula--img"
+                  src="images/logo-webakula.png"
+                  alt="webakula"
+              /></a>
+            </div>
+          </div>
+          <div class="offset-2 col-1">
+            <p class="footer__h2">Навигация</p>
+            <ul class="footer__nav">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Главная</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">О компании</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Туры</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Контакты</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Услуги</a>
+              </li>
+            </ul>
+          </div>
+          <div class="offset-1 col-1">
+            <p class="footer__h2">Поддержка</p>
+            <ul class="footer__nav">
+              <li class="footer__item">
+                <a href="#" class="footer__link">FAQ</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Блог</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Обратная связь</a>
+              </li>
+            </ul>
+          </div>
+          <div class="offset-1 col-3">
+            <p class="footer__h2">Контакт</p>
+            <div class="icon icon__local"></div>
+            <p class="head__adress footer__adress">
+              г. Харьков, ул. Мироносицкая 10а
+            </p>
+            <br />
+            <div class="icon icon__phone footer__icon"></div>
+            <p class="head__phone footer__phone">
+              +38 (099) 990-81-00
+            </p>
+            <div class="head__social">
+              <div class="icon icon__fb footer__fb"></div>
+              <div class="icon icon__insta footer__insta"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Scripts -->
+    <script src="js/libs/jquery-3.4.1.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

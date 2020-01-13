@@ -1,0 +1,60 @@
+.order {
+  padding: 1px 0;
+  background: url("../images/order-bg.jpg") no-repeat bottom center;
+  &__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 50px 0 30px 0;
+  }
+  &__form {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    padding: 40px 30px;
+    margin-bottom: 50px;
+  }
+}
+input {
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  margin: 5px;
+}
+input::-moz-placeholder,
+input::-webkit-input-placeholder {
+  color: #fff;
+}
+input:hover,
+input:focus {
+  border-bottom: 2px solid red;
+}
+.form {
+  &__button {
+    background-color: $yellow;
+    border-radius: 5px;
+    padding: 5px 10px;
+    &:hover {
+      background-color: $hover;
+      color: #fff;
+    }
+  }
+}
+input::placeholder {
+  color: #fff;
+  &:hover {
+    color: $hover;
+  }
+}
+select {
+  position: relative;
+  background-color: transparent;
+  color: #fff;
+  margin: 5px 10px 5px 5px;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid red;
+  }
+}
+option {
+  background-color: $grey;
+  color: black;
+}

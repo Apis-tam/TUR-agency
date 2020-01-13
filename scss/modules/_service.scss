@@ -1,0 +1,18 @@
+.service {
+  padding-top: 1px;
+  background-color: $grey;
+  padding-bottom: 75px;
+  &__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 40px 0 60px 0;
+  }
+  &__picture {
+    max-width: 458px;
+    max-height: 321px;
+  }
+  &__desc {
+    font-size: 16px;
+  }
+}
