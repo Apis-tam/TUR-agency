@@ -38,7 +38,10 @@
                 <p class="head__phone"></p>
                 <div class="icon icon__phone"></div>
                 <p class="head__phone">
-                  +38 (099) 990-81-00 (viber, telegram)
+                  <a class="head__phone--link" href="tel:+380999908100">
+                    +38 (099) 990-81-00</a
+                  >
+                  (viber, telegram)
                 </p>
                 <div class="head__social">
                   <div class="icon icon__fb"></div>
@@ -55,7 +58,23 @@
                   aria-expanded="false"
                   aria-label="Toggle navigation"
                 >
-                  <span class="navbar-toggler-icon"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></span>
+                  <span class="navbar-toggler-icon"
+                    ><svg
+                      height="32px"
+                      id="Layer_1"
+                      style="enable-background:new 0 0 32 32;"
+                      version="1.1"
+                      viewBox="0 0 32 32"
+                      width="32px"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <path
+                        d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+                      />
+                    </svg>
+                  </span>
                 </button>
 
                 <div
@@ -260,14 +279,16 @@
       <div class="container">
         <h1 class="service__title">наши преимущества</h1>
         <div class="row service__row">
-          <div class="col-12 col-md-5">
-            <img
-              class="service__picture"
-              src="images/service-picture.jpg"
-              alt="service picture"
-            />
+          <div class="col-12 col-md-6">
+            <div class="service__img-box">
+              <img
+                class="service__picture"
+                src="images/service-picture.jpg"
+                alt="service picture"
+              />
+            </div>
           </div>
-          <div class="col-12 offset-1 col-md-6">
+          <div class="col-12 col-md-6">
             <p class="service__desc">
               Очень долго подбирали разные варианты для того, чтобы
               отпраздновать свой юбилейный День рождения в путешествии и не
@@ -287,9 +308,21 @@
         <h1 class="order__title">хочу предложение по туру</h1>
         <div class="order__form">
           <form action="#">
-            <input class="form__name" type="text" placeholder="Имя" />
+            <input
+              class="form__name"
+              type="text"
+              placeholder="Имя"
+              pattern="[A-Za-z]"
+            />
             <input class="form__mail" type="email" placeholder="Email" />
-            <input class="form__tel" type="tel" placeholder="Телефон" />
+            <input
+              class="form__tel"
+              type="tel"
+              placeholder="Телефон"
+              pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{2}[ -][0-9]{2}"
+              minlength="13"
+              maxlength="13"
+            />
             <select name="country" id="country" class="form__select">
               <option class="selected" selected disabled>Старна тура</option>
               <option value="egypt">Египет</option>
@@ -307,7 +340,7 @@
     <section class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="footer__logo">
               <img src="images/kuraj-tur.png" alt="logo" />
             </div>
@@ -327,7 +360,7 @@
               /></a>
             </div>
           </div>
-          <div class="offset-2 col-1">
+          <div class=" col-6 offset-2 col-md-1">
             <p class="footer__h2">Навигация</p>
             <ul class="footer__nav">
               <li class="footer__item">
@@ -347,7 +380,7 @@
               </li>
             </ul>
           </div>
-          <div class="offset-1 col-1">
+          <div class="col-6 offset-1 col-md-1">
             <p class="footer__h2">Поддержка</p>
             <ul class="footer__nav">
               <li class="footer__item">
@@ -361,7 +394,7 @@
               </li>
             </ul>
           </div>
-          <div class="offset-1 col-3">
+          <div class="col-6 offset-1 col-md-3">
             <p class="footer__h2">Контакт</p>
             <div class="icon icon__local"></div>
             <p class="head__adress footer__adress">

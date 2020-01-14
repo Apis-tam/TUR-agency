@@ -51,6 +51,14 @@
     z-index: 100;
     color: #fff;
   }
+  &__phone--link {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: $hover;
+      text-decoration: none;
+    }
+  }
   &__contact {
     display: flex;
     flex-wrap: nowrap;
@@ -91,6 +99,9 @@
 }
 .dropdown-item {
   color: #fff;
+  @media (max-width: 670px) {
+    white-space: normal;
+  }
 
   &:hover {
     color: #000;

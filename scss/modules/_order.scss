@@ -24,8 +24,16 @@ input::-webkit-input-placeholder {
   color: #fff;
 }
 input:hover,
-input:focus {
+input:focus,
+input:focus::placeholder {
   border-bottom: 2px solid red;
+  color: rgba(255, 255, 255, 0.548);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
 }
 .form {
   &__button {

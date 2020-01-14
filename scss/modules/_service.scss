@@ -6,11 +6,13 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 24px;
-    margin: 40px 0 60px 0;
+    margin: 40px 10px 60px 0;
   }
   &__picture {
     max-width: 458px;
     max-height: 321px;
+    width: 100%;
+    margin-bottom: 10px;
   }
   &__desc {
     font-size: 16px;
