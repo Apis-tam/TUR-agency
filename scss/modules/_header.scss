@@ -5,6 +5,9 @@
   &__local {
     background: url("../images/local-icon.png") no-repeat top center;
     display: inline-block;
+    @media (max-width: 450px) {
+      display: none;
+    }
     &:hover {
       background: url("../images/local-icon-hover.png") no-repeat top center;
     }
@@ -12,6 +15,9 @@
   &__phone {
     display: inline-block;
     background: url("../images/phone-icon.png") no-repeat top center;
+    @media (max-width: 450px) {
+      display: none;
+    }
     &:hover {
       background: url("../images/phone-icon-hover.png") no-repeat top center;
     }
@@ -64,6 +70,9 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     z-index: 100;
+    @media (max-width: 450px) {
+      flex-direction: column;
+    }
   }
   &__social {
     display: flex;

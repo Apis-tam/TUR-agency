@@ -66,3 +66,9 @@ option {
   background-color: $grey;
   color: black;
 }
+///error msg
+
+.error {
+  color: red;
+  z-index: 100;
+}

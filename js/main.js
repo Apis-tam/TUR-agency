@@ -36,5 +36,35 @@
         }
       ]
     });
+
+    //validation
+
+    let btn = document.querySelector(".form__button");
+    btn.onclick = function validation(event) {
+      event.preventDefault();
+
+      jQuery.validator.setDefaults({
+        debug: true,
+        success: "valid"
+      });
+      $("input:blank").css("background-color", "rgba(255, 0, 0, 0.486)");
+      $(".forma").validate({
+        focusCleanup: true,
+        rules: {
+          name: "required",
+          minlenght: 2
+        },
+        email: {
+          required: "введите email",
+          minlenght: 5,
+          email: true
+        },
+        messages: {
+          name: "Введите свое имя Кирилицей",
+          required: "Заполните это поле",
+          minlength: a.validator.format("Введите больше {2} символов.")
+        }
+      });
+    };
   });
 })(jQuery);
