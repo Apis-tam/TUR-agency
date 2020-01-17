@@ -62,7 +62,7 @@
         messages: {
           name: "Введите свое имя Кирилицей",
           required: "Заполните это поле",
-          minlength: a.validator.format("Введите больше {2} символов.")
+          minlength: "2"
         }
       });
     };
